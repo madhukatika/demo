@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+             margin: 0px;
+            }
+       
+        .con{
+         position: absolute;
+         width: 400px;
+         height: 400px;
+         
+         
+        
+    }
+   
+    .rt i{
+            position: absolute;
+            right:10px;
+            top:220px;
+            color: red;
+    }
+    .lt i{
+            position: relative;
+            left:10px;
+            top:220px;
+            color: red;
+        }
+       
+       .fir i{
+        position: relative;
+        color: red;
+        left: 35%;
+        bottom: 80px;
+        font-size: 10px;
+       
+       }
+       .sec i{
+        
+        position: relative;
+        color: red;
+        left: 40%;
+        bottom: 90px;
+        font-size: 10px;
+
+      
+       }
+       .thr i{
+        position: relative;
+        color: red;
+        left: 45%;
+        bottom: 99px;
+        font-size: 10px;
+        
+       }
+       .fou i{
+        position: relative;
+        color: red;
+        left: 50%;
+        bottom: 110px;
+        font-size: 10px;
+       
+       }
+       .fiv i{
+        position: relative;
+        color: red;
+        left: 55%;
+        bottom: 120px;
+        font-size: 10px;
+       
+       }
+</style>
+    </head>
+    <body>
+        <div class="con">
+            <div class="lt" onclick="fun1()"><i class="fa-solid fa-less-than"></i></div>
+            <img id="i1" src="1.jpg" width="400px" height="400px">
+            <div class="rt" onclick="fun()"><i class="fa-solid fa-greater-than"></i></div>
+            
+            <div class="fir" onclick="fun2()"><i class="fa-solid fa-circle"></i></div>
+            <div class="sec" onclick="fun3()"><i class="fa-solid fa-circle"></i></div>
+            <div class="thr" onclick="fun4()"><i class="fa-solid fa-circle"></i></div>
+            <div class="fou" onclick="fun5()"><i class="fa-solid fa-circle"></i></div>
+            <div class="fiv" onclick="fun6()"><i class="fa-solid fa-circle"></i></div>
+            
+        
+         </div>
+         <script>
+            var i=0
+                var arr=["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"]
+            function fun(){
+               
+                 i++
+                 if(i>=arr.length){
+                    i=0
+                 }
+                 console.log(i)
+                 document.getElementById("i1").src=arr[i]
+            }
+            function fun1(){
+               
+             i--
+             if(i==-1)
+             {
+                i=arr.length-1
+             }
+             console.log(i)
+                 document.getElementById("i1").src=arr[i]
+            }
+
+            function fun2()
+          {
+                document.getElementById("i1").src="1.jpg"
+            }
+            function fun3()
+          {
+                document.getElementById("i1").src="2.jpg"
+            }
+            function fun4()
+          {
+                document.getElementById("i1").src="3.jpg"
+            }
+            function fun5()
+          {
+                document.getElementById("i1").src="4.jpg"
+            }
+            function fun6()
+          {
+                document.getElementById("i1").src="5.jpg"
+            }
+           
+            
+         </script>
+    </body>
+</html>
